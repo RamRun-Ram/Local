@@ -15,10 +15,10 @@
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.google.collections</groupId>
-            <artifactId>google-collections</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.google.collections</groupId>-->
+<!--            <artifactId>google-collections</artifactId>-->
+<!--        </dependency>-->
     </dependencies>
 
     <packaging>jar</packaging>
@@ -29,9 +29,9 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <configuration>
-                    <descriptionRefs>
+                    <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
-                    </descriptionRefs>
+                    </descriptorRefs>
                     <archive>
                         <manifest>
                             <mainClass>ru.ram.home.HelloOtus</mainClass>
@@ -50,6 +50,4 @@
             </plugin>
         </plugins>
     </build>
-
-
 </project>
